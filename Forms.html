@@ -39,11 +39,15 @@
         <form>
             Username: <input type="text" name="username" size="10" maxlength="8" value="Enter"/>
             <br/>
+            Password: <input type="password" name="password" size="10"/>>
+            <br/>
+            <br/>
             <!-- Radio buttons with the same name make it so the user only can select one -->
+            What type of riding do you prefer?
             Track: <input type="radio" name="type" value="track" />
             Trail: <input type="radio" name="type" value="trail" />
             <br/>
-            <p>Select the make of bike you would like.</p>
+            <p>Select the make of bike you would like:</p>
             KTM <input type="checkbox" name="make" value="KTM" />
             Yamaha <input type="checkbox" name="make" value="Yamaha" />
             Honda <input type="checkbox" name="make" value="Honda" />
@@ -51,13 +55,23 @@
             GasGas <input type="checkbox" name="make" value="GasGas" />
 
             <br/>
-
+            <!-- the following makes a drop box -->
             <select name="location">
                 <option value="Gorman"> Gorman</option>
                 <option value="Ballanger"> Ballanger</option>
                 <option value="Glenhellen"> Glenhellen</option>
-
+                <option value="Indian Dunes"> Indian</option>
             </select>
+
+            <br/>
+
+            <textarea name="aboutArea" rows="8" cols="40">
+                Give us some information about the place here.
+            </textarea>
+
+            <p>Now choose a file to upload!</p>
+            <input type="file" name="userFile"/>
+
         </form>
 
     </body>
