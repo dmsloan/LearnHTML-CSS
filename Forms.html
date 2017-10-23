@@ -2,77 +2,82 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
-        <title>Forms.html</title>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Forms.html For learning</title>
+
+    <style type="text/css">
+        img {
+            max-height: 400px;
+            max-width: 400px;
+        }
         
-        <style type="text/css">
-            img {max-height: 400px;
-                max-width: 400px;}
-
-            input[type=text] {
-                border: 2px solid red;
-                border-radius: 4px;
-                }
-
-            input[type=radio] {font-size: 30; color: red;}
-
-            p:first-letter{font-weight: bold;
-              font-size: 30px;
-              color: red;}
+        input[type=text] {
+            border: 2px solid red;
+            border-radius: 4px;
+        }
         
-        </style>
+        input[type=radio] {
+            font-size: 30;
+            color: red;
+        }
         
-    </head>
-    <body>
-        <!--[if lt IE 7]>
+        p:first-letter {
+            font-weight: bold;
+            font-size: 30px;
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <img src="DSC_3009-750x499.jpg">
-        <img src="GasGas-EC300Rightweb.jpg">
-        <img src="Ron-at-GHbig6web.jpg">
-        <form>
-            Username: <input type="text" name="username" size="10" maxlength="8" value="Enter"/>
-            <br/>
-            Password: <input type="password" name="password" size="10"/>>
-            <br/>
-            <br/>
-            <!-- Radio buttons with the same name make it so the user only can select one -->
-            What type of riding do you prefer?
-            Track: <input type="radio" name="type" value="track" />
-            Trail: <input type="radio" name="type" value="trail" />
-            <br/>
-            <p>Select the make of bike you would like:</p>
-            KTM <input type="checkbox" name="make" value="KTM" />
-            Yamaha <input type="checkbox" name="make" value="Yamaha" />
-            Honda <input type="checkbox" name="make" value="Honda" />
-            Kawaski <input type="checkbox" name="make" value="Kawaski" />
-            GasGas <input type="checkbox" name="make" value="GasGas" />
+    <img src="DSC_3009-750x499.jpg">
+    <img src="GasGas-EC300Rightweb.jpg">
+    <img src="Ron-at-GHbig6web.jpg">
+    <form>
+        Username: <input type="text" name="username" size="10" maxlength="8" placeholder="User Name" required />
+        <br/> Password: <input type="password" name="password" size="10" placeholder="Password" required />
+        <br/>
+        <br/>
+        <!-- Radio buttons with the same name make it so the user only can select one -->
+        What type of riding do you prefer? Track: <input type="radio" name="type" value="track" /> Trail: <input type="radio" name="type" value="trail" />
+        <br/>
+        <p>Select the make of bike you would like:</p>
+        KTM <input type="checkbox" name="make" value="KTM" /> Yamaha <input type="checkbox" name="make" value="Yamaha" /> Honda <input type="checkbox" name="make" value="Honda" /> Kawaski <input type="checkbox" name="make" value="Kawaski" /> GasGas <input
+            type="checkbox" name="make" value="GasGas" />
 
-            <br/>
-            <!-- the following makes a drop box -->
-            <select name="location">
+        <br/>
+        <!-- the following makes a drop box -->
+        <select name="location">
                 <option value="Gorman"> Gorman</option>
                 <option value="Ballanger"> Ballanger</option>
                 <option value="Glenhellen"> Glenhellen</option>
                 <option value="Indian Dunes"> Indian</option>
             </select>
 
-            <br/>
+        <br/>
 
-            <textarea name="aboutArea" rows="8" cols="40">
+        <textarea name="aboutArea" rows="8" cols="40">
                 Give us some information about the place here.
             </textarea>
 
-            <p>Now choose a file to upload!</p>
-            <input type="file" name="userFile"/>
+        <p>Now choose a file to upload!</p>
+        <input type="file" name="userFile" />
 
-        </form>
+    </form>
 
-    </body>
+</body>
+
 </html>
